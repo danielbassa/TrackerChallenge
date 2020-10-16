@@ -18,7 +18,7 @@ public class ItineraryService {
 		return itineraries;
 	}
 	
-	public List<Itinerary> showItineraries(int userId) {
+	public List<Itinerary> showItineraries(Integer userId) {
 		List<Itinerary> itineraries = itineraryRepository.findByUserId(userId);
 		return itineraries;
 	}

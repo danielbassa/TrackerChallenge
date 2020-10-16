@@ -9,5 +9,5 @@ import it.trackerchallenge.entity.Itinerary;
 
 @Repository
 public interface ItineraryRepository extends JpaRepository<Itinerary, Integer> {
-	List<Itinerary> findByUserId(int userId);
+	List<Itinerary> findByUserId(Integer userId);
 }

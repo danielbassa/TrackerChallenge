@@ -16,7 +16,7 @@
 
         <legend><b>Login</b></legend>
 
-        <form method="GET" action="/TrackerChallenge/login-user">
+        <form method="POST" action="/TrackerChallenge/login-user">
 
             <label>Email: </label>
             <input type="text" name="email" /><br>
@@ -28,9 +28,10 @@
         </form>
 
     </fieldset>
-
+	
+	<h4>${error}</h4>
+	<h4>${confirmation}</h4>
     <a href="/TrackerChallenge/sign_in">Sign In</a><br>
 
 </body>
-
 </html>
