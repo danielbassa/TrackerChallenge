@@ -1,5 +1,6 @@
 package it.trackerchallenge.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,13 @@ public class TransportationService {
 		Optional<Transportation> transportation = transportationRepository.findById(id);
 		
 		return transportation.isPresent() ? transportation.get().getTransport() : null;
+		
+	}
+	
+	public List<Transportation> getAllTransport() {
+		
+		List<Transportation> transportations = transportationRepository.findAll();
+		return transportations;
 		
 	}
 }
