@@ -37,13 +37,9 @@ public class ItineraryController {
 	@RequestMapping(value = "/view-records", method = RequestMethod.GET)
 	public String viewRecords(HttpServletRequest request, HttpServletResponse response, Model model, Locale locale) {
 		
-		/*
 		HttpSession session = request.getSession();
 		User user = (User) session.getAttribute("loggedUser");
-		*/
-		
-		User user = userService.load(1);
-		
+	
 		String radioValue = request.getParameter("radioValueCategory");
 		
 		List<Itinerary> itineraries;
