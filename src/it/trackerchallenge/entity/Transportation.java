@@ -16,6 +16,7 @@ public class Transportation {
 	private Integer id;
 	@Column
 	private String transport;
+	
 	public Integer getId() {
 		return id;
 	}

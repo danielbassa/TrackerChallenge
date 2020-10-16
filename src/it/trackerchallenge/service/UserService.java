@@ -38,13 +38,13 @@ public class UserService {
 		userRepository.save(user);
 	}
 	
-	public User load(int id) {
+	public User load(Integer id) {
 		Optional<User> user = userRepository.findById(id);
 		return user.isPresent() ? user.get() : null;
 	}
 	
 	@Transactional
-	public void updateUser(int id, User userData) {
+	public void updateUser(Integer id, User userData) {
 		if (userData == null) {
 			throw new IllegalArgumentException("userData is null");
 		}
@@ -60,4 +60,9 @@ public class UserService {
 	}
 	
 	
+	
+	public User login(String email, String password) {
+		Optional<User> user = userRepository.findByEmailAndPassword(email, password);
+		return user.isPresent() ? user.get() : null;
+	}
 }

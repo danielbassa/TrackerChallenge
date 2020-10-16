@@ -17,7 +17,7 @@ public class Itinerary {
 	@Column(name="id")
 	private Integer id;
 	@Column(name = "user_id")
-	private int userId;
+	private Integer userId;
 	@Column(name = "start_point")
 	private String startPoint;
 	@Column(name = "end_point")
@@ -28,6 +28,7 @@ public class Itinerary {
 	private LocalDateTime endDateTime;
 	@Column(name = "transportation_id")
 	private Integer transportationId;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -37,7 +38,7 @@ public class Itinerary {
 	public Integer getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
 	public String getStartPoint() {

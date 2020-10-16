@@ -24,7 +24,7 @@
     <form method="POST" action="/TrackerChallenge/logout-user">
 		<input type="submit" value="LOGOUT"/>
 	</form>
-    
+    <h4>${editOk}</h4>
     
 </body>
 

@@ -24,6 +24,7 @@ public class User {
 	private String mobile;
 	@Column
 	private String password;
+	
 	public Integer getId() {
 		return id;
 	}
