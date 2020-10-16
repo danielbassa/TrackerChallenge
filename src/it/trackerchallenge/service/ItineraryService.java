@@ -22,4 +22,11 @@ public class ItineraryService {
 		List<Itinerary> itineraries = itineraryRepository.findByUserId(userId);
 		return itineraries;
 	}
+	
+	public void insertItinerary(Itinerary itinerary) {
+		if (itinerary == null) {
+			throw new IllegalArgumentException("itinerary doesn't exist");
+		}
+		itineraryRepository.save(itinerary);
+	}
 }
