@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name = "itinerary")
 public class Itinerary {
@@ -23,8 +25,10 @@ public class Itinerary {
 	@Column(name = "end_point")
 	private String endPoint;
 	@Column(name = "start_date_time")
+	@DateTimeFormat(pattern = "dd-MM-yyyy'T'HH:mm")
 	private LocalDateTime startDateTime;
 	@Column(name = "end_date_time")
+	@DateTimeFormat(pattern = "dd-MM-yyyy'T'HH:mm")
 	private LocalDateTime endDateTime;
 	@Column(name = "transportation_id")
 	private Integer transportationId;

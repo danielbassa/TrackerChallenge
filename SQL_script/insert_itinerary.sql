@@ -1,0 +1,11 @@
+DELETE FROM trackers.itinerary;
+ALTER TABLE trackers.itinerary AUTO_INCREMENT = 1;
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 1, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-10-10 12:00:00', '2020-10-20 12:00:00', 2);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 1, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-10-01 12:00:00', '2020-10-10 12:00:00', 1);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 2, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-10-07 12:00:00', '2020-10-10 12:00:00', 2);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 3, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-10-10 12:00:00', '2020-10-10 12:00:00', 6);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 4, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-10-02 12:00:00', '2020-10-10 12:00:00', 9);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 2, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-10-10 12:00:00', '2020-10-10 12:00:00', 5);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 3, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-09-29 12:00:00', '2020-10-10 12:00:00', 8);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 4, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-10-10 12:00:00', '2020-10-10 12:00:00', 2);
+INSERT INTO trackers.itinerary (id, user_id, start_point, end_point, start_date_time, end_date_time, transportation_id) VALUES (null, 4, '-51.68246 -33.36664', '-69.83189 -179.58901', '2020-09-20 12:00:00', '2020-10-10 12:00:00', 4);

@@ -38,7 +38,7 @@
 			
 			</form>
 		
-		</fieldset>ù
+		</fieldset>
 		
 	<h4>${confirmation}</h4>
 		

@@ -86,6 +86,7 @@ public class ItineraryController {
 	
 	@PostMapping("/add-itinerary")
 	public String addItinerary(Itinerary itinerary, Model model) {
+		System.out.println(itinerary.getStartDateTime().toString());
 		itineraryService.insertItinerary(itinerary);
 		model.addAttribute("confirmation", "Your itinerary has been added correctly");
 		return "add_itinerary";
