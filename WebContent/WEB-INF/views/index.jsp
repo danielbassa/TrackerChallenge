@@ -18,7 +18,7 @@
     <ul>	
 		<li><a href="/TrackerChallenge/profile">Profile</a></li>
 		<li><a href="/TrackerChallenge/add_itinerary">Add itinerary</a></li>
-		<li><a href="/TrackerChallenge/view">View your borrows</a></li>
+		<li><a href="/TrackerChallenge/view">View all itineraries or only yours</a></li>
     </ul>
     
     <form method="POST" action="/TrackerChallenge/logout-user">

@@ -22,8 +22,10 @@
 				<input type="text" name="endPoint"/><br>
 				<label>Start date time: </label>
 				<input type="text" name="startDateTime"/><br>
-				<label>End date time:: </label>
+				<label>End date time: </label>
 				<input type="text" name="endDateTime"/><br>
+				<label>Transportation: </label>
+				<input type="text" name="transportationId"/><br>
 
 				<input type="submit" value="ADD"/>
 			

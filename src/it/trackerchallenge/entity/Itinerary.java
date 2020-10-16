@@ -15,7 +15,7 @@ public class Itinerary {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int id;
+	private Integer id;
 	@Column(name = "user_id")
 	private int userId;
 	@Column(name = "start_point")
@@ -27,14 +27,14 @@ public class Itinerary {
 	@Column(name = "end_date_time")
 	private LocalDateTime endDateTime;
 	@Column(name = "transportation_id")
-	private int transportationId;
-	public int getId() {
+	private Integer transportationId;
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
-	public int getUserId() {
+	public Integer getUserId() {
 		return userId;
 	}
 	public void setUserId(int userId) {
@@ -64,10 +64,10 @@ public class Itinerary {
 	public void setEndDateTime(LocalDateTime endDateTime) {
 		this.endDateTime = endDateTime;
 	}
-	public int getTransportationId() {
+	public Integer getTransportationId() {
 		return transportationId;
 	}
-	public void setTransportationId(int transportationId) {
+	public void setTransportationId(Integer transportationId) {
 		this.transportationId = transportationId;
 	}
 }

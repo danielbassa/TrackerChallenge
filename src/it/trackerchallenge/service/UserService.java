@@ -16,6 +16,20 @@ public class UserService {
 	@Autowired
 	UserRepository userRepository;
 	
+	public String getUserNominative(int id) {
+		
+		Optional<User> user = userRepository.findById(id);
+		
+		if (user.isPresent()) {
+			StringBuilder nominative = new StringBuilder();
+			nominative.append(user.get().getName()).append(" ").append(user.get().getSurname());
+			return nominative.toString();
+		} else {
+			return null;
+		}
+	}
+	
+	
 	@Transactional
 	public void insertUser(User user) {
 		if (user == null) {
@@ -44,4 +58,6 @@ public class UserService {
 				userRepository.save(user);	
 			} else throw new IllegalArgumentException("dati utente non presenti"); 
 	}
+	
+	
 }
