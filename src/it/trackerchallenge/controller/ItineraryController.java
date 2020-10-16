@@ -84,8 +84,8 @@ public class ItineraryController {
 		return "view";
 	}
 	
-	@PostMapping("/signin-user")
-	public String signIn(Itinerary itinerary, Model model) {
+	@PostMapping("/add-itinerary")
+	public String addItinerary(Itinerary itinerary, Model model) {
 		itineraryService.insertItinerary(itinerary);
 		model.addAttribute("confirmation", "Your itinerary has been added correctly");
 		return "add_itinerary";
